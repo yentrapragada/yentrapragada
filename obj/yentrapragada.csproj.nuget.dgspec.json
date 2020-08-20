@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yentrapragadat\\Desktop\\Desktop\\Tejkumar\\Website\\yentrapragada\\yentrapragada.csproj": {}
+    "C:\\Users\\yentrapragadat\\source\\repos\\yentrapragada\\yentrapragada.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yentrapragadat\\Desktop\\Desktop\\Tejkumar\\Website\\yentrapragada\\yentrapragada.csproj": {
+    "C:\\Users\\yentrapragadat\\source\\repos\\yentrapragada\\yentrapragada.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yentrapragadat\\Desktop\\Desktop\\Tejkumar\\Website\\yentrapragada\\yentrapragada.csproj",
+        "projectUniqueName": "C:\\Users\\yentrapragadat\\source\\repos\\yentrapragada\\yentrapragada.csproj",
         "projectName": "yentrapragada",
-        "projectPath": "C:\\Users\\yentrapragadat\\Desktop\\Desktop\\Tejkumar\\Website\\yentrapragada\\yentrapragada.csproj",
+        "projectPath": "C:\\Users\\yentrapragadat\\source\\repos\\yentrapragada\\yentrapragada.csproj",
         "packagesPath": "C:\\Users\\yentrapragadat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yentrapragadat\\Desktop\\Desktop\\Tejkumar\\Website\\yentrapragada\\obj\\",
+        "outputPath": "C:\\Users\\yentrapragadat\\source\\repos\\yentrapragada\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
