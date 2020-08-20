@@ -1,0 +1,185 @@
+﻿@{
+    ViewData["Title"] = "Summary";
+}
+<style>
+    .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+
+
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+    .active:after {
+        content: "\2212";
+    }
+
+    .active, .collapsible:hover {
+        background-color: #edad4c;
+    }
+
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#headProg").click(function () {
+            $("#bodyProg").toggle();
+        });
+        $("#headWeb").click(function () {
+            $("#bodyWeb").toggle();
+        });
+        $("#headFront").click(function () {
+            $("#bodyFront").toggle();
+        });
+        $("#headDb").click(function () {
+            $("#bodyDb").toggle();
+        });
+        $("#headTools").click(function () {
+            $("#bodyTools").toggle();
+        });
+        $("#headMobile").click(function () {
+            $("#bodyMobile").toggle();
+        });
+        $("#headOther").click(function () {
+            $("#bodyOther").toggle();
+        });
+    });
+
+
+</script>
+
+<div class="row">
+    <div class="col-sm-9">
+        <div class="panel panel-success  margin-top-2em">
+            <div class="panel-heading" id="headSummary">Summary</div>
+            <div class="panel-body panel-hegiht" id="bodySummary">
+                <ul>
+                    <li>3 Years of experience as a full stack developer in Analysis, Design, Development, Implementation, Integration and Testing of Client/Server, Internet Systems using Object Oriented Analysis/Design/Methodologies.</li>
+                    <li>Proficient in designing and developing web front end, component-based, object-oriented systems for building multi-tier architecture with hands on development expertise in front end GUI layer, application layer including middle-ware and core business frameworks and back-end (database) layer integration.</li>
+                    <li>Good Understanding of Design Patterns, Model View Controller (MVC) Architecture, Service Oriented Architecture (SOA) in developing enterprise applications.</li>
+                    <li>Expertise in working with Web Technologies like <strong>HTML, XHTML, CSS JSON, JQuery, AngularJS, XML, Node JS and JavaScript.</strong></li>
+                    <li>Experience with Web Forms, <strong>Web API</strong>, CSS, <strong>ASP.NET, AJAX, JavaScript</strong>, UI design and development consuming and manipulating data using <strong>ADO.NET</strong>.</li>
+                    <li>Expertise in Design and Development of User Interfaces, User Controls and Custom Controls using ASP.NET and C#.</li>
+                    <li>Proficiency in developing applications using <strong>ASP.NET MVC</strong>, ASP.NET Web Forms, LINQ, Windows Communication Foundation(WCF), <strong>Web Service</strong>, Web API.</li>
+                    <li>Expertise in developing Windows Forms.</li>
+                    <li><span style="white-space:pre;">&nbsp;</span>Strong knowledge in WPF assemblies, namespaces, hosting Windows Forms Controls in WPF pages using XAML, WPF elements and dependency properties.</li>
+                    <li>Proficient with .NET Web Services using <strong>SOAP, RESTful</strong>.</li>
+                    <li>Experience in <strong>LINQ&nbsp;</strong>(Language Integrated Query Language), LINQ to SQL, Entity Framework.</li>
+                    <li>Experience in<strong>&nbsp;Entity Framework</strong> an Object-Relational Mapping (ORM) solution for .NET.</li>
+                    <li>Experience in Designing relational databases and developing and tuning SQL Queries, Stored Procedures, User-defined functions, Triggers, SSIS Packages etc. using SQL Server.</li>
+                    <li>Profound experience in developing applications using the Agile SCRUM and TDD Methodologies.</li>
+                    <li>Good Communication, Interpersonal Skills and excellent team player.</li>
+                    <li>Developed Android and IOS applications using <strong>Xamarin</strong> and <strong>React Native</strong>. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="row">
+            <div class="panel panel-success margin-top-2em">
+                <div class="panel-heading collapsible" id="headProg" style="font-family:'Times New Roman'">Programming</div>
+                <div class="panel-body panel-hegiht" id="bodyProg">
+                    <ul>
+                        <li><strong><span style="color: rgb(84, 172, 210);">C, C#, VB.Net, Java, Cold Fusion</span></strong></li>
+                        @*<li><span style="color: rgb(84, 172, 210);"><strong>C#</strong></span></li>
+                            <li><span style="color: rgb(84, 172, 210);"><strong>VB.Net</strong></span></li>
+                            <li><span style="color: rgb(84, 172, 210);"><strong>Java</strong></span></li>
+                            <li><strong><span style="color: rgb(84, 172, 210);">Cold Fusion</span></strong></li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-success margin-top-2em">
+                <div class="panel-heading collapsible" id="headWeb" style="font-family:'Times New Roman'">Web Technologies</div>
+                <div class="panel-body panel-hegiht" id="bodyWeb">
+                    <ul>
+                        <li><strong><span style="color: rgb(84, 172, 210);">ASP.Net MVC /ASP..Net Core</span></strong></li>
+                        <li><span style="color: rgb(84, 172, 210);"><strong>Web API</strong></span></li>
+                        <li><span style="color: rgb(84, 172, 210);"><strong>ADO.Net<br></strong></span></li>
+                        <li><span style="color: rgb(84, 172, 210);"><strong>LINQ with lambda expressions</strong></span></li>
+                        <li><strong><span style="color: rgb(84, 172, 210);">Entity Framework / <span style='font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;'>Entity Framework</span> Core</span></strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-success margin-top-2em">
+                <div class="panel-heading collapsible" id="headFront" style="font-family:'Times New Roman'">Front End</div>
+                <div class="panel-body panel-hegiht" id="bodyFront">
+                    <ul>
+                        <li><strong><span style="color: rgb(84, 172, 210);">HTML5, CSS3, Bootstrap CSS, AJAX,&nbsp;</span></strong></li>
+                        <li><span style="color: rgb(84, 172, 210);"><span style='font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;'><strong>JavaScript</strong></span></span><strong><span style="color: rgb(84, 172, 210);">, ReactJS, AngularJS, jQuery, JSON, TypeScript</span></strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-success margin-top-2em">
+                <div class="panel-heading collapsible" id="headDb" style="font-family:'Times New Roman'">Database</div>
+                <div class="panel-body panel-hegiht" id="bodyDb">
+                    <ul>
+                        <li><span style="color: rgb(84, 172, 210);"><strong>&nbsp;MS SQL Server, Oracle, My SQL, Mongo DB</strong></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-success margin-top-2em">
+                <div class="panel-heading collapsible" id="headTools" style="font-family:'Times New Roman'">Tools / Framework</div>
+                <div class="panel-body panel-hegiht" id="bodyTools">
+                    <ul>
+                        <li><strong><span style="color: rgb(84, 172, 210);">Source Control: Git, Team Foundation Server</span></strong></li>
+                        <li><span style="color: rgb(84, 172, 210);"><strong>Development Tools: Visual Studio.NET 2015/2017/2019, TFS, GIT, STASH and PowerShell.</strong></span></li>
+                        <li><span style="color: rgb(84, 172, 210);"><strong>Testing: NUnit, NMock</strong></span></li>
+                        <li><span style="color: rgb(84, 172, 210);"><strong>Reporting tools: SQL Server Reporting Services (SSRS), SSIS, SSAS</strong></span></li>
+                        <li><strong><span style="color: rgb(84, 172, 210);">Project Management: SDLC, Scrum</span></strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-success margin-top-2em">
+                <div class="panel-heading collapsible" id="headMobile" style="font-family:'Times New Roman'">Mobile Development Skills</div>
+                <div class="panel-body panel-hegiht" id="bodyMobile">
+                    <ul>
+                        <li><strong><span style="color: rgb(84, 172, 210);">&nbsp; Xamarin, React Native</span></strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-success margin-top-2em">
+                <div class="panel-heading collapsible" id="headOther" style="font-family:'Times New Roman'">Other Skills</div>
+                <div class="panel-body panel-hegiht" id="bodyOther">
+                    <ul>
+                        <li><span style="color: rgb(84, 172, 210);"><strong>Desktop: Windows Forms &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></span></li>
+                        <li><strong><span style="color: rgb(84, 172, 210);">Web Servers: IIS 5.0/6.0</span></strong></li>
+                        <li><span style="color: rgb(84, 172, 210);"><strong>Web Services: SOAP &amp; RESTful &nbsp; &nbsp; </strong></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tejkumar's profile - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/font-awesome/css/font-awesome.css" />  
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+</head>
+<body style="background: white">
+    <script src="~/js/modernizr-2.8.3.js"></script>
+    <div class="page-content" style="min-height: calc(100vh - 221px);background: white;">
+
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+              
+                <div class="">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+
+                    </button>
+                    <div class="navbar-brand app-brand" style="color:whitesmoke"><a href="@Url.Action("Index","Home")">
+                        <span class="" style="font-family:Calibri;font-size:xx-large">Tejkumar Yentrapragada</span>
+                        </br>
+                        <span class="" style="font-family:Calibri;font-size:large"> &nbsp; Software Developer</span></a>
+                    </div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                       
+                        <li><a style="font-size: 20px; text-decoration: none" href="@Url.Action("Index","Home")"><span class="fa fa-home "></span>&nbsp;Home&nbsp;</a></li>
+                        <li><a style="font-size: 20px; text-decoration: none" href="@Url.Action("Education","Home")"><span class="fa fa-book "></span>&nbsp;Education&nbsp;</a></li>
+                        <li><a style="font-size: 20px; text-decoration: none" href="@Url.Action("WorkExperience","Home")"><span class="fa fa-wordpress "></span>&nbsp;Work Experience&nbsp;</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"  style="font-size: 20px; text-decoration: none">
+                                Other Details
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a style="font-size: 15px; text-decoration: none" href="@Url.Action("SocialMedia","Home")"><span class="fa fa-wordpress "></span>&nbsp;Social Media&nbsp;</a></li>
+                                <li><a style="font-size: 15px; text-decoration: none" href="@Url.Action("Contact","Home")"><span class="fa fa-wordpress "></span>&nbsp;Contact&nbsp;</a></li>
+                                <li><a style="font-size: 15px; text-decoration: none" href="@Url.Action("Index","Home")"><span class="fa fa-wordpress "></span>&nbsp;Social Media&nbsp;</a></li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+     
+
+        <div class="container">
+            @*<div class="row">
+            <div class="col-md-8 page-header text-info">
+                <h3> @ViewBag.Title</h3>
+            </div>
+        </div>*@
+            <div class="col-md-12 page-header text-info">
+                <h3> @ViewBag.Title</h3>
+            </div>
+            @RenderBody()
+        </div>
+        <!-- /container -->
+
+        @*<footer class="footer">
+            <div class="container footer-container" style="text-align:center">
+                <span class="pull-left">&copy; Yentrapragada, Tejkumar</span>
+
+                <span>  <a class="" href=""  style="padding-left: 7px;"><i class="fa fa-facebook fa-2x"></i></a></span>
+                <span>  <a class="" href=""  style="padding-left: 7px;"><i class="fa fa-linkedin fa-2x"></i></a></span>
+                <span>  <a class="" href=""  style="padding-left: 7px;"><i class="fa fa-youtube fa-2x"></i></a></span>
+                <span>  <a class="" href=""  style="padding-left: 7px;"><i class="fa fa-skype fa-2x"></i></a></span>
+                <span>  <a class="" href=""  style="padding-left: 7px;"><i class="fa fa-google fa-2x"></i></a></span>
+                <span>  <a class="" href="" style="padding-left: 7px;"><i class="fa fa-twitter fa-2x"></i></a></span>
+                <span>  <a class="" href="" style="padding-left: 7px;"><i class="fa fa-instagram fa-2x"></i></a></span>
+                <span class="pull-right">Need Help? Contact <a href="mailto:dunti.210@gmail.com" class="plainlink" data-toggle="modal" data-target="#supportModal"><u>Tejkumar Yentraprgada</u></a></span>
+
+            </div>
+        </footer>*@
+
+    </div>
+   
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation/dist/additional-methods.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+
+    @RenderSection("Scripts", required: false)
+    @RenderSection("Styles", required: false)
+</body>
+</html>
